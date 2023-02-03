@@ -113,8 +113,55 @@ body {
 
 .social-networks__link-item {
   margin: 0 1rem;
+  opacity: 0;
 }
 
 .nav-main__btn-collapse:checked ~ .social-networks {
   transform: scaleX(1);
+}
+
+.nav-main__btn-collapse:checked ~ .social-networks .social-networks__link-item {
+  animation: effectOpacity var(--time-animation) 0.2 forwards;
+}
+
+.nav-main__menu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: flex;
+  flex-direction: column;
+  width: var(--size-btn-collapse);
+  height: calc(100vh - 64px);
+  background-color: var(--color-red);
+  padding: 2rem;
+  font-weight: 300;
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  transform: scaleY(0);
+  transition: transform var(--time-animation);
+  transform-origin: top;
+}
+
+.nav-main__link-item {
+  margin-bottom: 2rem;
+  opacity: 0;
+}
+
+.nav-main__link-item > .far{
+  display: inline-block;
+  margin-right: 0.6rem;
+}
+
+.nav-main__btn-collapse:checked ~ .nav-main__menu {
+  transform: scaleY(1);
+}
+
+.nav-main__btn-collapse:checked ~ .nav-main__menu .nav-main__link-item {
+  animation: effectOpacity var(--time-animation) .3s forwards;
+}
+
+@keyframes effectOpacity {
+  to{
+    opacity: 1;
+  }
 }
