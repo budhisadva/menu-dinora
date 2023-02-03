@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Menu con HTML y CSS</title>
+    <!-- css fontawsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/style.css"/>
+  </head>
+  <body>
+    <nav class="nav-main">
+      <!-- btn -->
+      <input type="checkbox" class="nav-main__btn-collapse" id="nav-main__checkbox">
+      <label for="nav-main__checkbox" class="nav-main__btn-collapse-icon">
+        <span class="icon-nav"></span>
+        <span class="icon-nav"></span>
+        <span class="icon-nav"></span>
+      </label>
+      <!-- box red -->
+      <div class="nav-main__btn-collapse-bg"></div>
+      <!-- social networks -->
+      <div class="social-networks">
+        <!-- linkedIn -->
+        <a href="#" target="_blank" class="social-networks__link-item">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <!-- Git -->
+        <a href="#" target="_blank" class="social-networks__link-item">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+      <!-- menu -->
+      <div class="nav-main__menu">
+        <a href="#" class="nav-main__link-item">
+          <i class="fa-regular fa-face-grin-beam"></i>
+          About
+        </a>
+        <a href="#" class="nav-main__link-item">
+          <i class="fa-solid fa-sun"></i>
+          Services
+        </a>
+        <a href="#" class="nav-main__link-item">
+          <i class="fa-solid fa-flag"></i>
+          Team
+        </a>
+        <a href="#" class="nav-main__link-item">
+          <i class="fa-light fa-envelope"></i>
+          Contact
+        </a>
+      </div>
+    </nav>
+  </body>
+</html>
